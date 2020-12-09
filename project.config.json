@@ -41,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.12.2",
   "appid": "wxf9971d0ffde76cc6",
-  "projectname": "Music",
+  "projectname": "dudu-miniapp",
   "debugOptions": {
     "hidedInDevtools": []
   },

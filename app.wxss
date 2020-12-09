@@ -35,3 +35,14 @@
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 5px 1px #f0f0f0;
 }
+
+.page {
+  /* background: #ffffff; */
+}
+
+/* 暗黑模式下应用的样式 */
+@media (prefers-color-scheme: dark) {
+  .page {
+    /* background: #000000; */
+  }
+}
