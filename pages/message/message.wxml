@@ -1,0 +1,6 @@
+<!--pages/message/message.wxml-->
+<view class="page">
+    <view class="page-body">
+        <text style="font-size: 2.0em;">最新</text>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/musicPage/musicPage.wxml-->
+<view class="page">
+    <view class="page-body">
+        <text style="font-size: 2.0em;">精选</text>
+        <!-- 轮播 -->
+        <view class="page-section page-section-spacing swiper">
+            <swiper indicator-dots="{{indicatorDots}}" class="self-swiper-sty self-card-shadow"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{background}}" wx:key="*this">
+                <swiper-item>
+                    <view class="swiper-item">
+                        <image class="self-img-sty" src="{{item}}" mode="aspectFill"></image>
+                    </view>
+                </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+</view>
