@@ -36,6 +36,11 @@
   box-shadow: 2px 2px 5px 1px #f0f0f0;
 }
 
+.self-title-head {
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
 .page {
   /* background: #ffffff; */
 }

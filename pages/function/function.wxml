@@ -1,7 +1,7 @@
 <!--pages/function/function.wxml-->
 <view class="page">
     <view class="page-body">
-        <text style="font-size: 2.0em;">功能</text>
+        <text class="self-title-head">功能</text>
         <div class="grid-box">
             <div wx:for="{{functionList}}" class="test-box">
                 <text class="self-text" bindtap="goGanFan">{{item.name}}</text>
