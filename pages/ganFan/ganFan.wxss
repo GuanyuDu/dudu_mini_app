@@ -1,1 +1,69 @@
 /* pages/ganFan/ganFan.wxss */
+.title-position {
+  height: 50px;
+  display: grid;
+  margin-top: 25px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 25px;
+  border: 2px dashed black;
+  background-color: #f0f0f0;
+}
+
+.module {
+  margin-top: 25px;
+}
+
+.form-position {
+  height: 70px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.button-position {
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button-position button {
+  width: 150px !important;
+}
+
+.rank {
+  display: grid;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 1.1em;
+  background-color: #fdf5e4;
+  border-radius: 10px;
+  border: 1px dashed #a0a0a0;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.rank-item {
+  display: grid;
+  height: 30px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.total {
+  display: grid;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 1.1em;
+  background-color: #fdf5e4;
+  border-radius: 10px;
+  border: 1px dashed #a0a0a0;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.total-item {
+  display: grid;
+  height: 30px;
+  align-items: center;
+  grid-template-columns: 4fr 5fr 1fr;
+}

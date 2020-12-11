@@ -1,0 +1,14 @@
+<view class="inner">
+  <div class="block">
+    <div class="block-header">
+      <text class="text-subhead">{{category}}</text>
+      <text class="text-head">{{title}}</text>
+    </div>
+    <div class="block-body">
+    </div>
+    <div class="block-footer">
+      <text>{{description}}</text>
+    </div>
+  </div>
+</view>
+<slot></slot>

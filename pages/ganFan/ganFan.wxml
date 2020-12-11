@@ -1,2 +1,46 @@
 <!--pages/ganFan/ganFan.wxml-->
-<text>pages/ganFan/ganFan.wxml</text>
+<view class="page">
+  <view class="page-body">
+    <text class="title-first">今天吃什么</text>
+    <view class="operation">
+      <view class="title-second title-position">
+        <text>{{result}}</text>
+      </view>
+      <view class="form-position">
+        <view>
+          <switch type="checkbox" checked="{{removeEated}}"/>去除本周吃过的
+        </view>
+      </view>
+      <view class="button-position">
+        <button>再来一次</button>
+        <button>就是你了</button>
+      </view>
+    </view>
+    <view class="module">
+      <view>
+        <text class="title-third">本周</text>
+        <!-- <view class="split-line"></view> -->
+      </view>
+      <view class="rank">
+        <view wx:for="{{thisWeek}}" class="rank-item">
+          <text>{{item.week}}</text>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="module">
+      <view>
+        <text class="title-third">总榜</text>
+        <!-- <view class="split-line"></view> -->
+      </view>
+      <view class="total">
+        <view wx:for="{{totalRank}}" class="total-item">
+          <text>{{item.order}}</text>
+          <text>{{item.name}}</text>
+          <text>{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -5,22 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    functionList: [
-      {
-        code: "randomEat",
-        name: "随机干饭机"
-      }
-    ],
-    number: 20
-  },
-
-  goGanFan: function (event) {
-    console.log(event)
-    // if (name == "randomEat") {
-    //   wx.navigateTo({
-    //     url: 'pages/ganFan/ganFan',
-    //   })
-    // }
+    
   },
 
   /**

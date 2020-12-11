@@ -7,6 +7,7 @@
     "pages/logs/logs"
   ],
   "tabBar": {
+    "color": "#949494",
     "selectedColor": "#2e7bfd",
     "list": [{
       "text": "Music",
@@ -43,6 +44,7 @@
   "usingComponents": {
     "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
     "mp-dialog": "weui-miniprogram/dialog/dialog",
-    "mp-loading": "weui-miniprogram/loading/loading"
+    "mp-loading": "weui-miniprogram/loading/loading",
+    "block-big": "pages/components/block/bigBlock"
   }
 }

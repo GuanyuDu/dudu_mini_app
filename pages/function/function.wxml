@@ -1,11 +1,6 @@
 <!--pages/function/function.wxml-->
 <view class="page">
     <view class="page-body">
-        <text class="self-title-head">功能</text>
-        <div class="grid-box">
-            <div wx:for="{{functionList}}" class="test-box">
-                <text class="self-text" bindtap="goGanFan">{{item.name}}</text>
-            </div>
-        </div>
+        <text class="title-first">功能</text>
     </view>
 </view>
