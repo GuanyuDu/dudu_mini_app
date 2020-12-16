@@ -37,9 +37,7 @@
   margin-top: 10px;
   padding: 0 10px;
   font-size: 1.1em;
-  background-color: #fdf5e4;
   border-radius: 10px;
-  border: 1px dashed #a0a0a0;
   grid-template-rows: repeat(5, 1fr);
 }
 
@@ -47,6 +45,7 @@
   display: grid;
   height: 30px;
   align-items: center;
+  border-bottom: 1px solid #d0d0d0;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -55,9 +54,7 @@
   margin-top: 10px;
   padding: 0 10px;
   font-size: 1.1em;
-  background-color: #fdf5e4;
   border-radius: 10px;
-  border: 1px dashed #a0a0a0;
   grid-template-rows: repeat(3, 1fr);
 }
 
@@ -65,5 +62,6 @@
   display: grid;
   height: 30px;
   align-items: center;
+  border-bottom: 1px solid #d0d0d0;
   grid-template-columns: 4fr 5fr 1fr;
 }

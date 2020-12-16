@@ -34,11 +34,6 @@
   font-weight: bold;
 }
 
-button {
-  border-radius: 20px !important;
-  border: 1px solid rgb(87, 87, 87);
-}
-
 /* 暗黑模式下应用的样式 */
 @media (prefers-color-scheme: dark) {
   .page {
