@@ -34,9 +34,15 @@
   font-weight: bold;
 }
 
+.eat-back {
+  background-color: #f0f0f0;
+  border: 2px dashed black;
+}
+
 /* 暗黑模式下应用的样式 */
 @media (prefers-color-scheme: dark) {
-  .page {
-    /* background: #000000; */
+  .eat-back {
+    background: #535353;
+    border: 2px dashed #d0d0d0;
   }
 }

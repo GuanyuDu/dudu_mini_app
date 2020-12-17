@@ -9,9 +9,13 @@ Component({
       type: String,
       value: '干饭生成器',
     },
-    description: {
+    des: {
       type: String,
       value: '今天吃什么，这是个问题'
+    },
+    image: {
+      type: String,
+      value: ''
     }
   },
   data: {

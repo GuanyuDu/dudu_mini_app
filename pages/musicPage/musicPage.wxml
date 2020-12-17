@@ -15,7 +15,5 @@
                 </block>
             </swiper>
         </view>
-        <!-- big cards -->
-        <block-big bindtap="goFunctionPage" />
     </view>
 </view>

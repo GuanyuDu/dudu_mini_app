@@ -2,5 +2,25 @@
 <view class="page">
     <view class="page-body">
         <text class="title-first">最新</text>
+        <view class="msg-item">
+            <view class="user-info">
+                <view>
+                    <text>Cover</text>
+                </view>
+                <view>
+                    <text>Name</text>
+                </view>
+            </view>
+            <view>
+                <text>message content</text>
+            </view>
+            <view>
+                <text>2020/12/17 11:12</text>
+                <text>like / dislike</text>
+            </view>
+        </view>
+        <view class="msg-footer">
+            <input class="self-input" auto-focus placeholder="将会获取焦点"/>
+        </view>
     </view>
 </view>

@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    methodName: 'goFunctionPage'
+  },
+
+  goFunctionPage: function() {
+    wx.navigateTo({
+      url: '/pages/ganFan/ganFan',
+    })
   },
 
   /**

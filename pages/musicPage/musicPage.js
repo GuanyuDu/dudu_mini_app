@@ -16,11 +16,6 @@ Page({
     interval: 5000,
     duration: 500
   },
-  goFunctionPage: function() {
-    wx.navigateTo({
-      url: '/pages/ganFan/ganFan',
-    })
-  },
 
   /**
    * 生命周期函数--监听页面加载

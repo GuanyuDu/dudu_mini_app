@@ -1,5 +1,5 @@
 <view class="inner">
-  <div class="block">
+  <div class="block" style="background-image: url('{{image}}');">
     <div class="block-header">
       <text class="text-subhead">{{category}}</text>
       <text class="text-head">{{title}}</text>
@@ -7,7 +7,7 @@
     <div class="block-body">
     </div>
     <div class="block-footer">
-      <text>{{description}}</text>
+      <text>{{des}}</text>
     </div>
   </div>
 </view>

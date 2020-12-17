@@ -3,7 +3,7 @@
   <view class="page-body">
     <text class="title-first">今天吃什么</text>
     <view class="operation">
-      <view class="title-second title-position">
+      <view class="title-second title-position eat-back">
         <text>{{result}}</text>
       </view>
       <view class="form-position">
@@ -23,7 +23,7 @@
         <!-- <view class="split-line"></view> -->
       </view>
       <view class="rank">
-        <view wx:for="{{thisWeek}}" class="rank-item">
+        <view wx:for="{{thisWeek}}" wx:key="key" class="rank-item">
           <text>{{item.week}}</text>
           <text>{{item.name}}</text>
         </view>
@@ -35,7 +35,7 @@
         <!-- <view class="split-line"></view> -->
       </view>
       <view class="total">
-        <view wx:for="{{totalRank}}" class="total-item">
+        <view wx:for="{{totalRank}}" wx:key="key" class="total-item">
           <text>{{item.order}}</text>
           <text>{{item.name}}</text>
           <text>{{item.count}}</text>
