@@ -1,19 +1,19 @@
 <!--pages/function/function.wxml-->
 <view class="page">
-    <view class="page-body">
-        <text class="title-first">功能</text>
-        <!-- big cards -->
-        <block-big 
-            title="干饭生成器" 
-            des="今天吃什么，这是个问题" 
-            category="Tools" 
-            bindtap="{{methodName}}" 
-            image="https://dududu.top/upload/2020/12/pasta-ed51aeb6a3a74d53b685b79524d011f4.jpg" 
-        />
-        <block-big 
-            title="开发中……" 
-            des="会是什么新功能呢？真是令人期待呀" 
-            category="New" 
-        />
-    </view>
+  <view class="page-body">
+    <text class="title-first">功能</text>
+    <!-- big cards -->
+    <block-big 
+      title="干饭生成器" 
+      des="今天吃什么，这是个问题" 
+      category="Tools" 
+      bindtap="{{methodName}}" 
+      image="https://dududu.top/upload/2020/12/pasta-ed51aeb6a3a74d53b685b79524d011f4.jpg" 
+    />
+    <block-big 
+      title="开发中……" 
+      des="会是什么新功能呢？真是令人期待呀" 
+      category="New" 
+    />
+  </view>
 </view>
