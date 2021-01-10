@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/musicPage/musicPage",
     "pages/message/message",
     "pages/function/function",
     "pages/ganFan/ganFan",
@@ -9,12 +8,7 @@
   "tabBar": {
     "color": "#949494",
     "selectedColor": "#2e7bfd",
-    "list": [{
-      "text": "Music",
-      "pagePath": "pages/musicPage/musicPage",
-      "iconPath": "assets/icons/music.png",
-      "selectedIconPath": "assets/icons/music_blue.png"
-    },
+    "list": [
     {
       "text": "Messag",
       "pagePath": "pages/message/message",
@@ -34,7 +28,8 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "@navBackgroundColor",
     "navigationBarTitleText": "DuDu",
-    "navigationBarTextStyle":"@navTextStyle"
+    "navigationBarTextStyle":"@navTextStyle",
+    "onReachBottomDistance": 50
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
@@ -45,6 +40,7 @@
     "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
     "mp-dialog": "weui-miniprogram/dialog/dialog",
     "mp-loading": "weui-miniprogram/loading/loading",
-    "block-big": "pages/components/block/bigBlock"
+    "block-big": "pages/components/big-block/big-block",
+    "msg-section": "pages/components/msg-section/msg-section"
   }
 }

@@ -1,26 +1,21 @@
 <!--pages/message/message.wxml-->
 <view class="page">
     <view class="page-body">
-        <text class="title-first">最新</text>
-        <view class="msg-item">
-            <view class="user-info">
-                <view>
-                    <text>Cover</text>
-                </view>
-                <view>
-                    <text>Name</text>
-                </view>
-            </view>
-            <view>
-                <text>message content</text>
-            </view>
-            <view>
-                <text>2020/12/17 11:12</text>
-                <text>like / dislike</text>
-            </view>
+        <view>
+            <text class="title-first">留言板</text>
         </view>
-        <view class="msg-footer">
-            <input class="self-input" auto-focus placeholder="将会获取焦点"/>
+        <view wx:for="{{ msgs }}" wx:key="idx">
+            <msg-section 
+                cover="{{ item.cover }}" 
+                nickName="{{ item.nickName }}" 
+                message="{{ item.message }}" 
+                createdTime="{{ item.createdTime }}" 
+                backColor="{{ item.cardColor }}" 
+                top="{{ item.top }}" />
+        </view>
+        <!-- float button -->
+        <view class="float-btn">
+            <text>说两句</text>
         </view>
     </view>
 </view>

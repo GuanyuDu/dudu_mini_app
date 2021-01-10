@@ -1,0 +1,23 @@
+<!--pages/components/msg-section/msg-section.wxml-->
+<view class="inner">
+  <view class="msg-item" style="background-color: {{ backColor }};">
+      <view class="msg-body">
+        <view class="user-info">
+          <view class="user-cover" style="background-image: url('{{ cover }}');"></view>
+          <view class="user-name">
+              <text>{{ nickName }}</text>
+          </view>
+        </view>
+        <view class="msg-content">
+            <text user-select="true">{{ message }}</text>
+        </view>
+      </view>
+      <view class="msg-footer">
+          <view class="msg-time">
+            <text>{{ createdTime }}</text>
+          </view>
+      </view>
+      <view wx:if="{{ top == 1 }}" class="msg-top"></view>
+  </view>
+</view>
+<slot></slot>
