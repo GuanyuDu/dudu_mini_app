@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/musicPage/musicPage",
     "pages/message/message",
     "pages/function/function",
     "pages/ganFan/ganFan",
@@ -9,24 +8,20 @@
   "tabBar": {
     "color": "#949494",
     "selectedColor": "#2e7bfd",
-    "list": [{
-      "text": "Music",
-      "pagePath": "pages/musicPage/musicPage",
-      "iconPath": "assets/icons/music.png",
-      "selectedIconPath": "assets/icons/music_blue.png"
-    },
-    {
-      "text": "Messag",
-      "pagePath": "pages/message/message",
-      "iconPath": "assets/icons/message.png",
-      "selectedIconPath": "assets/icons/message_blue.png"
-    },
-    {
-      "text": "Function",
-      "pagePath": "pages/function/function",
-      "iconPath": "assets/icons/function.png",
-      "selectedIconPath": "assets/icons/function_blue.png"
-    }]
+    "list": [
+      {
+        "text": "Messag",
+        "pagePath": "pages/message/message",
+        "iconPath": "assets/icons/message.png",
+        "selectedIconPath": "assets/icons/message_blue.png"
+      },
+      {
+        "text": "Function",
+        "pagePath": "pages/function/function",
+        "iconPath": "assets/icons/function.png",
+        "selectedIconPath": "assets/icons/function_blue.png"
+      }
+    ]
   },
   "darkmode": true,
   "themeLocation": "theme.json",
