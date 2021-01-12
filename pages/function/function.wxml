@@ -7,7 +7,7 @@
       title="干饭生成器" 
       des="今天吃什么，这是个问题" 
       category="Tools" 
-      bindtap="{{methodName}}" 
+      bindtap="{{ methodName }}" 
       image="https://dududu.top/upload/2020/12/pasta-ed51aeb6a3a74d53b685b79524d011f4.jpg" 
     />
     <block-big 

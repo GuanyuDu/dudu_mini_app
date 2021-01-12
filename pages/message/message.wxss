@@ -1,15 +1,16 @@
 /* pages/message/message.wxss */
-.msg-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background-color: rgba(255, 255, 255, .5);
-}
-
-.self-input {
-  width: 50%;
+.float-btn {
+  width: 60px;
   height: 40px;
-  background-color: #f0f0f0;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 15px;
+  border: 2px solid #f0f0f0;
+  background-color: #88b3fe;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
 }
