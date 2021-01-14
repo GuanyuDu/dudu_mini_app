@@ -42,6 +42,7 @@
     "mp-dialog": "weui-miniprogram/dialog/dialog",
     "mp-loading": "weui-miniprogram/loading/loading",
     "block-big": "pages/components/big-block/big-block",
-    "msg-section": "pages/components/msg-section/msg-section"
+    "msg-section": "pages/components/msg-section/msg-section",
+    "dialog-card": "pages/components/dialog-card/dialog-card"
   }
 }

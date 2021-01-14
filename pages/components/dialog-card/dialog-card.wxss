@@ -1,0 +1,26 @@
+/* pages/components/dialog-card/dialog-card.wxss */
+.inner {
+  height: 100%;
+}
+.dg-container {
+  background-color: rgba(148, 148, 148, 0.9);
+  display: grid;
+  height: 100%;
+  padding: 20px 20px 0;
+  grid-template-rows: 1fr 4fr 1fr;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+}
+
+.dg-header {
+  background-color: rgba(167, 167, 167, .8);
+}
+
+.dg-main {
+  background-color: rgba(158, 185, 142, 0.9);
+}
+
+.dg-footer {
+  background-color: rgba(167, 167, 167, .8);
+}

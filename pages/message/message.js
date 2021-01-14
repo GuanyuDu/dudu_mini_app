@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    showDialog: false,
     msgs: [
       {
         cover: "https://dududu.top/upload/2020/10/28436141-2a955da73c8d4279bc7864dcc34b59df.jpg",
@@ -48,8 +49,7 @@ Page({
         createdTime: "2020/01/1 00:00:01",
         top: 0
       }
-    ],
-    finalMsgs: []
+    ]
   },
 
   pickupColor: function() {
@@ -59,6 +59,12 @@ Page({
     })
     this.setData({
       msgs: arr
+    })
+  },
+
+  dialogCtl: function() {
+    this.setData({
+      showDialog: !this.data.showDialog
     })
   },
 
