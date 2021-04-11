@@ -45,7 +45,12 @@ Page({
         name: '鱼',
         count: 5
       }
-    ]
+    ],
+    showDialog: false
+  },
+
+  triggerDialog: function() {
+    this.setData({ showDialog: true })
   },
 
   /**

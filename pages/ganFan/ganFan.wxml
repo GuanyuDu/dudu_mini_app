@@ -14,7 +14,7 @@
       <view class="button-position">
         <!-- <a href="javascript:" class="weui-btn weui-btn_mini weui-btn_primary">就是你了</a> -->
         <button type="primary">就是你了</button>
-        <button type="default">再来一次</button>
+        <button type="default" bindtap="triggerDialog">再来一次</button>
       </view>
     </view>
     <view class="module">
@@ -42,6 +42,10 @@
         </view>
       </view>
     </view>
+    <!-- dialog -->
+    <dialog-card showDialog="{{ showDialog }}">
+        <text>你管我吃什么？</text>
+    </dialog-card>
   </view>
 </view>
 

@@ -14,8 +14,8 @@
                 top="{{ item.top }}" />
         </view>
         <!-- float button -->
-        <view class="float-btn">
-            <text bindtap="dialogCtl">说两句</text>
+        <view class="float-btn" bindtap="dialogCtl">
+            <text>说两句</text>
         </view>
         <!-- dialog -->
         <dialog-card showDialog="{{ showDialog }}" bind:confirm="confirmEvent" bind:cancel="cancelEvent">

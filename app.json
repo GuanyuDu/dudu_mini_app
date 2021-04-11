@@ -23,7 +23,7 @@
       }
     ]
   },
-  "darkmode": true,
+  "darkmode": false,
   "themeLocation": "theme.json",
   "window":{
     "backgroundTextStyle":"light",

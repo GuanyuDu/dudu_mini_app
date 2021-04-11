@@ -78,9 +78,11 @@ Page({
     this.setData({ showDialog: !this.data.showDialog })
   },
   confirmEvent: function() {
+    this.setData({ showDialog: false })
     console.log('trigger confirm event')
   },
   cancelEvent: function() {
+    this.setData({ showDialog: false })
     console.log('trigger cancel event')
   },
 

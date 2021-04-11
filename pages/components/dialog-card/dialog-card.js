@@ -22,11 +22,9 @@ Component({
    */
   methods: {
     confirm: function() {
-      this.setData({showDialog: false})
       this.triggerEvent('confirm')
     },
     cancel: function() {
-      this.setData({showDialog: false})
       this.triggerEvent('cancel')
     }
   }
