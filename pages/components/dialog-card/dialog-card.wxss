@@ -1,26 +1,39 @@
 /* pages/components/dialog-card/dialog-card.wxss */
-.inner {
-  height: 100%;
-}
-.dg-container {
-  background-color: rgba(148, 148, 148, 0.9);
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: grid;
-  height: 100%;
-  padding: 20px 20px 0;
-  grid-template-rows: 1fr 4fr 1fr;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dg-container {
+  height: 50%;
+  width: 80%;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
   overflow: hidden;
 }
 
-.dg-header {
-  background-color: rgba(167, 167, 167, .8);
+.dg-header .dg-title {
+  font-size: 1.5em;
 }
 
-.dg-main {
-  background-color: rgba(158, 185, 142, 0.9);
+.dg-bottom {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 10px 1fr;
 }
 
-.dg-footer {
-  background-color: rgba(167, 167, 167, .8);
+.dg-bottom button {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.1);
 }

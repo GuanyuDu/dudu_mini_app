@@ -1,11 +1,21 @@
 <!--pages/components/dialog-card/dialog-card.wxml-->
-<view class="inner">
+<view class="mask" wx:if="{{ showDialog }}">
+  <!-- body -->
   <view class="dg-container">
-    <view class="dg-header" style="display: grid;grid-template-rows: 1fr 1fr 1fr;">
-      <text>Tips: 要有善发言哦!</text>
-      <text>不然 Dudu Sama 会把你关进小黑屋的</text>
+    <view class="dg-header">
+      <text class="dg-title">Caution</text>
     </view>
-    <view class="dg-main">body</view>
-    <view class="dg-footer">footer</view>
+    <view class="dg-main">
+      <!-- 这里的包裹层可以修改成纵向滚动视图 -->
+      <slot></slot>
+    </view>
+    <view class="dg-footer">
+      <text>Tips: 要有善发言哦！</text>
+    </view>
+    <view class="dg-bottom">
+      <button bindtap="confirm">YES</button>
+      <view></view>
+      <button bindtap="cancel">NO</button>
+    </view>
   </view>
 </view>

@@ -2,7 +2,7 @@
 <view class="page">
     <view class="page-body">
         <view>
-            <text class="title-first" bindtap="dialogCtl">留言板</text>
+            <text class="title-first">留言板</text>
         </view>
         <view wx:for="{{ msgs }}" wx:key="idx">
             <msg-section 
@@ -14,10 +14,12 @@
                 top="{{ item.top }}" />
         </view>
         <!-- float button -->
-        <view class="float-btn {{ showDialog ? 'show' : 'hide' }}" bindtap="dialogCtl">
-            <text>说两句</text>
+        <view class="float-btn">
+            <text bindtap="dialogCtl">说两句</text>
         </view>
         <!-- dialog -->
-        <dialog-card class="dialog {{ showDialog ? 'show' : '' }}" />
+        <dialog-card showDialog="{{ showDialog }}" bind:confirm="confirmEvent" bind:cancel="cancelEvent">
+            <text>我是插槽放进来的内容</text>
+        </dialog-card>
     </view>
 </view>

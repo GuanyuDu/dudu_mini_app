@@ -15,22 +15,3 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
   transition: all ease 200ms;
 }
-
-.dialog {
-  width: 100vw;
-  height:97vh;
-  top: 100vh;
-  left: 0;
-  right: 0;
-  position: fixed;
-  transition: all ease 200ms;
-  border: 1px solid black;
-}
-
-.show {
-  transform: translateY(-80vh);
-}
-
-.hide {
-  transform: translateY(-20px);
-}

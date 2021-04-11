@@ -22,7 +22,7 @@ Component({
     },
     backColor: {
       type: String,
-      value: '#d0d0d0'
+      value: ''
     },
     top: {
       type: Number,

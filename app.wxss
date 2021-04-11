@@ -1,6 +1,18 @@
 /**app.wxss**/
 
-@import './style/font-awesome.wxss';
+@font-face {
+  font-family: 'Nunito';
+  src: url('https://dududu.top/upload/2021/02/Nunito-Regular-1a6c710586944828b8e03e9f90bbf479.ttf');
+}
+
+/* @font-face {
+  font-family: 'Monoton';
+  src: url('https://dududu.top/upload/2021/02/Monoton-Regular-c7262daf467e4258b0264c9086870245.ttf');
+} */
+
+view {
+  font-family: 'Nunito';
+}
 
 .container {
   height: 100%;
@@ -23,6 +35,11 @@
 }
 
 .title-first {
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+.title1 {
   font-size: 2.0em;
   font-weight: bold;
 }

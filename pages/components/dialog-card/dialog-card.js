@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    showDialog: {
+      type: Boolean,
+      value: false
+    }
   },
 
   /**
@@ -18,6 +21,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    confirm: function() {
+      this.setData({showDialog: false})
+      this.triggerEvent('confirm')
+    },
+    cancel: function() {
+      this.setData({showDialog: false})
+      this.triggerEvent('cancel')
+    }
   }
 })

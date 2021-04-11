@@ -1,10 +1,10 @@
 /* pages/components/msg-section/msg-section.wxss */
 .msg-item {
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
   position: relative;
-  border-radius: 5px;
-  box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, .1);
+  border-radius: 15px;
+  box-shadow: 0 6px 10px 1px rgba(0, 0, 0, .1);
 }
 
 .msg-top {
