@@ -5,8 +5,18 @@
   margin-top: 25px;
   align-items: center;
   justify-items: center;
-  border-radius: 25px;
-  border: 2px dashed black;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.title-position::after {
+  content: '';
+  height: 20px;
+  width: 300px;
+  /* margin-top: 5px; */
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: rgb(240, 196, 138);
 }
 
 .module {
