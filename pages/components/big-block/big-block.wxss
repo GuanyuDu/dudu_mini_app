@@ -1,11 +1,11 @@
 .block {
-  height: 280px;
+  height: 180px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr 1fr;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 20px 25px;
   background-color: #a0a0a0;
   background-position: center;

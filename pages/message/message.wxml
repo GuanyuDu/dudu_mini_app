@@ -4,19 +4,22 @@
         <view>
             <text class="title-first">留言板</text>
         </view>
+        <view class="empty-text" wx:if="{{ msgs == null || msgs.length == 0}}">
+            <image src="/assets/icons/empty.svg" alt="empty"></image>
+            <text>这里空空的</text>
+        </view>
         <view wx:for="{{ msgs }}" wx:key="idx">
             <msg-section 
-                cover="{{ item.cover }}" 
-                nickName="{{ item.nickName }}" 
-                message="{{ item.message }}" 
-                createdTime="{{ item.createdTime }}" 
-                backColor="{{ item.cardColor }}" 
-                top="{{ item.top }}" />
+                cover="{{ item.avatar }}" 
+                nickName="{{ item.nickname }}" 
+                message="{{ item.comment }}" 
+                createdTime="{{ item.createTime }}" 
+                top="{{ item.topFlag }}" />
         </view>
         <!-- float button -->
-        <view class="float-btn" bindtap="dialogCtl">
+        <!-- <view class="float-btn" bindtap="dialogCtl">
             <text>说两句</text>
-        </view>
+        </view> -->
         <!-- dialog -->
         <dialog-card showDialog="{{ showDialog }}" bind:confirm="confirmEvent" bind:cancel="cancelEvent">
             <text>我是插槽放进来的内容</text>

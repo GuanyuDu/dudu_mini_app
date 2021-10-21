@@ -4,11 +4,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    methodName: 'goFunctionPage'
+    
   },
-  goFunctionPage: function() {
+  goGanFanPage: function() {
     wx.navigateTo({
       url: '/pages/ganFan/ganFan',
+    })
+  },
+  goExportPage: function() {
+    wx.navigateTo({
+      url: '/pages/tiktokExport/tiktokExport',
     })
   },
 

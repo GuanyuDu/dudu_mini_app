@@ -1,6 +1,6 @@
 <!--pages/components/msg-section/msg-section.wxml-->
 <view class="inner">
-  <view class="msg-item" style="background-color: {{ backColor }};">
+  <view class="msg-item" style="background-color: #d0d0d0;">
       <view class="msg-body">
         <view class="user-info">
           <view class="user-cover" style="background-image: url('{{ cover }}');"></view>

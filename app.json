@@ -1,48 +1,49 @@
 {
-  "pages":[
-    "pages/message/message",
-    "pages/function/function",
-    "pages/ganFan/ganFan",
-    "pages/logs/logs"
-  ],
-  "tabBar": {
-    "color": "#949494",
-    "selectedColor": "#2e7bfd",
-    "list": [
-      {
-        "text": "Messag",
-        "pagePath": "pages/message/message",
-        "iconPath": "assets/icons/message.png",
-        "selectedIconPath": "assets/icons/message_blue.png"
-      },
-      {
-        "text": "Function",
-        "pagePath": "pages/function/function",
-        "iconPath": "assets/icons/function.png",
-        "selectedIconPath": "assets/icons/function_blue.png"
-      }
-    ]
-  },
-  "darkmode": false,
-  "themeLocation": "theme.json",
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "@navBackgroundColor",
-    "navigationBarTitleText": "DuDu",
-    "navigationBarTextStyle":"@navTextStyle",
-    "onReachBottomDistance": 50
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "useExtendedLib": {
-    "weui": true
-  },
-  "usingComponents": {
-    "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
-    "mp-dialog": "weui-miniprogram/dialog/dialog",
-    "mp-loading": "weui-miniprogram/loading/loading",
-    "block-big": "pages/components/big-block/big-block",
-    "msg-section": "pages/components/msg-section/msg-section",
-    "dialog-card": "pages/components/dialog-card/dialog-card"
-  }
+    "pages": [
+        "pages/message/message",
+        "pages/function/function",
+        "pages/ganFan/ganFan",
+        "pages/logs/logs",
+        "pages/tiktokExport/tiktokExport"
+    ],
+    "tabBar": {
+        "color": "#949494",
+        "selectedColor": "#2e7bfd",
+        "list": [
+            {
+                "text": "Messag",
+                "pagePath": "pages/message/message",
+                "iconPath": "assets/icons/message.png",
+                "selectedIconPath": "assets/icons/message_blue.png"
+            },
+            {
+                "text": "Function",
+                "pagePath": "pages/function/function",
+                "iconPath": "assets/icons/function.png",
+                "selectedIconPath": "assets/icons/function_blue.png"
+            }
+        ]
+    },
+    "darkmode": false,
+    "themeLocation": "theme.json",
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "@navBackgroundColor",
+        "navigationBarTitleText": "DuDu",
+        "navigationBarTextStyle": "@navTextStyle",
+        "onReachBottomDistance": 50
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+        "weui": true
+    },
+    "usingComponents": {
+        "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
+        "mp-dialog": "weui-miniprogram/dialog/dialog",
+        "mp-loading": "weui-miniprogram/loading/loading",
+        "block-big": "pages/components/big-block/big-block",
+        "msg-section": "pages/components/msg-section/msg-section",
+        "dialog-card": "pages/components/dialog-card/dialog-card"
+    }
 }

@@ -1,5 +1,5 @@
 <!--pages/components/dialog-card/dialog-card.wxml-->
-<view class="mask" wx:if="{{ showDialog }}">
+<view class="mask" wx:if="{{ showDialog }}" catchtouchmove="onTouchMove">
   <!-- body -->
   <view class="dg-container">
     <view class="dg-header">

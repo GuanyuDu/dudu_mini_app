@@ -20,10 +20,6 @@ Component({
       type: String,
       value: ''
     },
-    backColor: {
-      type: String,
-      value: ''
-    },
     top: {
       type: Number,
       value: 0

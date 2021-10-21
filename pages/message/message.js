@@ -6,71 +6,26 @@ Page({
    */
   data: {
     showDialog: false,
-    msgs: [
-      {
-        cover: 'https://dududu.top/upload/2020/10/28436141-2a955da73c8d4279bc7864dcc34b59df.jpg',
-        nickName: 'Guanyu',
-        message: '今天天气真不戳！( •̀ ω •́ )y',
-        createdTime: '2020/01/10 20:01:39',
-        top: 1
+    msgs: []
+  },
+
+  loadMessages: function() {
+    var that = this;
+    let url = "http://localhost:8080/message";
+    wx.request({
+      url: url,
+      data: {
+        page: 1,
+        size: 10
       },
-      {
-        cover: 'https://dududu.top/upload/2021/01/cartoon-cover-03-6ba9d7692984462891c3bb7f16af9d55.png',
-        nickName: 'Neko',
-        message: 'miao wow ~，マスターは今日家にいません',
-        createdTime: '2020/01/10 20:01:39',
-        top: 0
-      },
-      {
-        cover: 'https://dududu.top/upload/2021/01/cartoon-cover-01-7824e8c6b020495b952b5bb7255c03ab.png',
-        nickName: 'Sakura',
-        message: '新年快乐',
-        createdTime: '2020/01/1 00:00:01',
-        top: 0
-      },
-      {
-        cover: 'https://dududu.top/upload/2021/01/cartoon-cover-02-459a6561af1148448ef02656d6a5bcc3.png',
-        nickName: 'Kuri Sama',
-        message: '鲁迅一生在文学创作、文学批评、思想研究、文学史研究、翻译、美术理论引进、基础科学介绍和古籍校勘与研究等多个领域具有重大贡献。他对于五四运动以后的中国社会思想文化发展具有重大影响，蜚声世界文坛，尤其在韩国、日本思想文化领域有极其重要的地位和影响，被誉为“二十世纪东亚文化地图上占最大领土的作家”。',
-        createdTime: '2020/01/1 00:00:01',
-        top: 0
-      },
-      {
-        cover: 'https://dududu.top/upload/2021/01/cartoon-cover-01-7824e8c6b020495b952b5bb7255c03ab.png',
-        nickName: 'Sakura',
-        message: '从今四海永为家，不用长江限南北',
-        createdTime: '2020/01/1 00:00:01',
-        top: 0
-      },
-      {
-        cover: 'https://dududu.top/upload/2021/01/cartoon-cover-01-7824e8c6b020495b952b5bb7255c03ab.png',
-        nickName: 'Sakura',
-        message: '竹影和诗瘦，梅花入梦香',
-        createdTime: '2020/01/1 00:00:01',
-        top: 0
+      success(response) {
+        let pageInfo = response.data.data
+        if (pageInfo != null) {
+          that.setData({
+            msgs: pageInfo.data
+          })
+        }
       }
-    ]
-  },
-  pickupColor: function() {
-    // 获取当前模式
-    if (false) {
-      // 深色模式
-      this.setColor('#2e2e2e')
-    } else {
-      // 浅色模式
-      this.setColor('#d0d0d0')
-    }
-  },
-  // 设置消息背景颜色值
-  setColor: function(color) {
-    let arr = this.data.msgs;
-    // 修改颜色值
-    arr.forEach((item) => {
-      item.cardColor = color
-    })
-    // 设置颜色值
-    this.setData({
-      msgs: arr
     })
   },
 
@@ -90,7 +45,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.pickupColor()
+    // this.loadMessages();
   },
 
   /**
