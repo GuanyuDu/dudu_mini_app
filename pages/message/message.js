@@ -6,6 +6,7 @@ Page({
    */
   data: {
     showDialog: false,
+    changeStatus: false,
     msgs: []
   },
 
@@ -30,7 +31,8 @@ Page({
   },
 
   dialogCtl: function() {
-    this.setData({ showDialog: !this.data.showDialog })
+    // this.setData({ showDialog: !this.data.showDialog })
+    this.setData({ changeStatus: !this.data.changeStatus })
   },
   confirmEvent: function() {
     this.setData({ showDialog: false })
@@ -45,7 +47,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.loadMessages();
+    this.loadMessages();
   },
 
   /**
@@ -90,7 +92,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log('reach bottom refresh')
+    console.log('你触发到底事件啦')
   },
 
   /**

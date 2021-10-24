@@ -16,7 +16,7 @@
   transition: all ease 200ms;
 }
 
-.empty-text {
+.empty-warn {
   height: 500px;
   display: flex;
   align-items: center;
@@ -24,13 +24,11 @@
   flex-direction: column;
 }
 
-.empty-text > text {
-  /* margin: 0 auto; */
-  color: #a0a0a0;
-  font-size: 0.9rem;
+.empty-warn > text {
+  color: var(--gray-2);
+  font-size: 1rem;
 }
 
-.empty-text > image {
+.empty-warn > image {
   height: 100px;
-  /* margin: 0 auto; */
 }

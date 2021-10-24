@@ -1,5 +1,7 @@
 {
   "usingComponents": {},
   "navigationBarTitleText": "",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "dark",
   "enablePullDownRefresh": true
 }

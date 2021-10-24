@@ -6,16 +6,6 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    wx.getSystemInfo({
-      success: (result) => {
-        let vh = result.windowHeight;
-        console.log(vh + " - " + result.windowWidth);
-        let ratio = 750 / result.windowWidth;
-        let rpxh = result.windowHeight * ratio;
-        console.log(rpxh);
-      },
-    })
-
     // 登录
     // wx.login({
     //   success: res => {

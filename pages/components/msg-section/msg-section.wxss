@@ -1,51 +1,58 @@
 /* pages/components/msg-section/msg-section.wxss */
 .msg-item {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
-  margin-top: 20px;
-  position: relative;
-  border-radius: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
   box-shadow: 0 6px 10px 1px rgba(0, 0, 0, .1);
+  background: var(--gray-1);
 }
+
+.msg-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.msg-user-avatar {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
+}
+
+.msg-side {
+  margin-left: 10px;
+}
+
+.msg-user-name {
+  color: rgba(0, 0, 0, .9);
+}
+
+.msg-content {
+  padding: 2px 0;
+  font-size: .9em;
+  color: rgba(0, 0, 0, .9);
+}
+
+.msg-footer {
+  color: rgba(0, 0, 0, .6);
+  font-size: .8em;
+  margin-top: 5px;
+}
+
+.msg-item
 
 .msg-top {
   content: '';
-  right: 15px;
-  bottom: 15px;
+  right: 30px;
   width: 20px;
   height: 20px;
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('https://dududu.top/upload/2021/01/ding-130f46a32d1b401fb9955f0ddc918776.png');
-}
-
-.user-cover {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
-}
-
-.msg-footer {
-  margin-top: 5px;
-}
-
-.msg-body {
-  display: grid;
-  grid-template-columns: 55px 10px auto;
-}
-
-.msg-body > .msg-content {
-  display: grid;
-  grid-column: 3 / 4;
-  align-items: center;
-}
-
-.msg-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  color: #6b6b6b;
-  font-size: .8em;
 }
