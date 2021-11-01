@@ -1,6 +1,22 @@
 <!--pages/tiktokExport/tiktokExport.wxml-->
 <view class="page">
     <view class="page-body">
-        <text>pages/tiktokExport/tiktokExport.wxml</text>
+        <view class="main-title">
+            <text class="title-1">TikTok Video</text>
+            <text class="title-2">Download</text>
+        </view>
+        <view class="input-area">
+            <input auto-focus="true" placeholder="在此粘贴分享链接" />
+            <view class="go-btn">
+                <span>Go</span>
+            </view>
+        </view>
+        <view class="result-area">
+            <view class="result-inner">
+                <span>https://developer.mozilla.org/enUS/docs/Web/CSS/flexGrow/docs/Web/CSS/flex-grow</span>
+                <view class="spit-line"></view>
+                <span>https://developer.mozilla.org/enUS/docs/Web/CSS/flexGrow/docs/Web/CSS/flex-grow</span>
+            </view>
+        </view>
     </view>
 </view>

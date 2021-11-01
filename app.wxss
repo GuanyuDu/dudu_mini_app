@@ -1,9 +1,9 @@
 /**app.wxss**/
 
-@font-face {
+/* @font-face {
   font-family: 'Nunito';
   src: url('https://dududu.top/upload/2021/02/Nunito-Regular-1a6c710586944828b8e03e9f90bbf479.ttf');
-}
+} */
 
 /* @font-face {
   font-family: 'Monoton';
@@ -11,7 +11,7 @@
 } */
 
 view {
-  font-family: 'Nunito';
+  /* font-family: 'Nunito'; */
   /* 全局调色盘 */
   --primary-color: #2e7bfd;
   --gray-1: #cecece;

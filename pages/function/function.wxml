@@ -22,24 +22,5 @@
       des="会是什么新功能呢？真是令人期待呀" 
       category="Coming Soon"
     />
-    <block-big 
-      title="抖音视频导出" 
-      des="导出没有水印的抖音视频" 
-      category="New" 
-      bindtap="goExportPage" 
-      image="https://dududu.top/upload/2020/09/cosmos-4868376_640-243c962118974ce3839d0cb0c9c1cef8.jpg" 
-    />
-    <block-big 
-      title="干饭生成器" 
-      des="今天吃什么，这是个问题" 
-      category="Tools" 
-      bindtap="goGanFanPage" 
-      image="https://dududu.top/upload/2020/12/star-anise-4c0b5efc186f47d09cc87868a73be8a1.jpg" 
-    />
-    <block-big 
-      title="开发中……" 
-      des="会是什么新功能呢？真是令人期待呀" 
-      category="Coming Soon"
-    />
   </view>
 </view>

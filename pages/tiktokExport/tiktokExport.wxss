@@ -1,1 +1,84 @@
 /* pages/tiktokExport/tiktokExport.wxss */
+.page-body {
+    height: 96vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #E8CBC0, #636FA4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+view {
+    word-wrap: break-word;
+    --black-8: rgba(0, 0, 0, .8);
+    --black-6: rgba(0, 0, 0, .6);
+}
+
+.spit-line {
+    height: 0;
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: 2px dashed var(--black-8);
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.input-area {
+    width: 85%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 40px;
+    border: 2px solid var(--black-8);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, .2);
+}
+
+.input-area > input {
+    width: 80%;
+    height: 100%;
+    padding: 0 10px;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.input-area > .go-btn {
+    width: 20%;
+    height: 100%;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0d0d0;
+    border-left: 2px solid var(--black-8);
+}
+
+.result-area {
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--black-8);
+    background-color: white;
+    min-height: 100px;
+    font-size: .8em;
+    color: var(--black-6);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, .2);
+}
+
+.result-inner {
+    padding: 10px;
+}
+
+.footer {
+    color: aliceblue;
+    font-size: .8em;
+}
