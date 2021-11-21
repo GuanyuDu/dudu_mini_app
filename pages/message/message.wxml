@@ -4,12 +4,11 @@
         <view>
             <text class="title-first">Message</text>
         </view>
-        <!-- <view class="empty-text" wx:if="{{ msgs == null || msgs.length == 0}}"> -->
-        <view class="empty-warn" wx:if="{{ changeStatus }}">
+        <view class="empty-text" wx:if="{{ msgs == null || msgs.length == 0 }}">
             <image src="/assets/icons/empty2.svg" alt="empty"></image>
             <text>Nothing here</text>
         </view>
-        <view wx:if="{{ !changeStatus }}" wx:for="{{ msgs }}" wx:key="idx">
+        <view wx:if="{{ !(msgs == null || msgs.length == 0) }}" wx:for="{{ msgs }}" wx:key="idx">
             <msg-section 
                 avatar="{{ item.avatar }}" 
                 nickName="{{ item.nickname }}" 

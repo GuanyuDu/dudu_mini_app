@@ -6,7 +6,6 @@ Page({
    */
   data: {
     showDialog: false,
-    changeStatus: false,
     msgs: []
   },
 
@@ -31,8 +30,7 @@ Page({
   },
 
   dialogCtl: function() {
-    // this.setData({ showDialog: !this.data.showDialog })
-    this.setData({ changeStatus: !this.data.changeStatus })
+    this.setData({ showDialog: !this.data.showDialog })
   },
   confirmEvent: function() {
     this.setData({ showDialog: false })
