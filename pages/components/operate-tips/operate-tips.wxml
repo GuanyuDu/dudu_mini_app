@@ -1,0 +1,6 @@
+<!--pages/components/empty-tips/empty-tips.wxml-->
+<view class="mask" wx:if="{{ showDialog }}" catchtouchmove="onTouchMove">
+    <view class="container">
+        
+    </view>
+</view>
