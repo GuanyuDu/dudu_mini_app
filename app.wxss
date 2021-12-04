@@ -1,6 +1,24 @@
 /**app.wxss**/
+
+/* @font-face {
+  font-family: 'Nunito';
+  src: url('https://dududu.top/upload/2021/02/Nunito-Regular-1a6c710586944828b8e03e9f90bbf479.ttf');
+} */
+
+/* @font-face {
+  font-family: 'Monoton';
+  src: url('https://dududu.top/upload/2021/02/Monoton-Regular-c7262daf467e4258b0264c9086870245.ttf');
+} */
+
+view {
+  /* font-family: 'Nunito'; */
+  /* 全局调色盘 */
+  --primary-color: #2e7bfd;
+  --gray-1: #cecece;
+  --gray-2: #bfbfbf;
+}
+
 .container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,28 +28,35 @@
 }
 
 .page-body {
-  padding: 10px 20px;
+  padding: 10px 20px 20px;
 }
 
-.grid-box {
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr;
-}
-
-.self-text {
-  font-size: 1.2em;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-.test-box {
+.split-line {
+  background: #d0d0d0;
   width: 100%;
-  height: 50px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 5px 1px #f0f0f0;
+  height: 1px;
+}
+
+.title-first {
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+.title-second {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.title-third {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* 暗黑模式下应用的样式 */
+@media (prefers-color-scheme: dark) {
+  .eat-back {
+    background: #535353;
+    border: 2px dashed #d0d0d0;
+  }
 }

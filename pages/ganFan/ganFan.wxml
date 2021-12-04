@@ -1,2 +1,55 @@
 <!--pages/ganFan/ganFan.wxml-->
-<text>pages/ganFan/ganFan.wxml</text>
+<view class="page">
+  <view class="page-body">
+    <view>
+      <text class="title-first">今天吃什么</text>
+    </view>
+    <view>
+      <text class="">what are we eating today</text>
+    </view>
+    <view class="operation">
+      <view class="title-second title-position eat-back">
+        <text>{{result}}</text>
+      </view>
+      <view class="form-position">
+        <view>
+          <switch type="checkbox" checked="{{removeEated}}" />去除本周吃过的
+        </view>
+      </view>
+      <view class="button-position">
+        <!-- <a href="javascript:" class="weui-btn weui-btn_mini weui-btn_primary">就是你了</a> -->
+        <button type="primary">就是你了</button>
+        <button type="default" bindtap="triggerDialog">再来一次</button>
+      </view>
+    </view>
+    <view class="module">
+      <view>
+        <text class="title-third">本周</text>
+        <!-- <view class="split-line"></view> -->
+      </view>
+      <view class="rank">
+        <view wx:for="{{thisWeek}}" wx:key="key" class="rank-item">
+          <text>{{item.week}}</text>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="module">
+      <view>
+        <text class="title-third">总榜</text>
+        <!-- <view class="split-line"></view> -->
+      </view>
+      <view class="total">
+        <view wx:for="{{totalRank}}" wx:key="key" class="total-item">
+          <text>{{item.order}}</text>
+          <text>{{item.name}}</text>
+          <text>{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- dialog -->
+    <dialog-card showDialog="{{ showDialog }}">
+      <text>你管我吃什么？</text>
+    </dialog-card>
+  </view>
+</view>

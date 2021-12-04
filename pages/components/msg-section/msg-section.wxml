@@ -1,0 +1,26 @@
+<!--pages/components/msg-section/msg-section.wxml-->
+<view class="inner">
+  <view class="msg-item">
+      <!-- 消息上部 -->
+      <view class="msg-body">
+        <view class="msg-user-avatar" style="background-image: url('{{ avatar }}');"></view>
+        <view class="msg-side">
+            <view class="msg-user-name">
+                <text>{{ nickName }}</text>
+            </view>
+            <view class="msg-content">
+              <text user-select="true">{{ message }}</text>
+            </view>
+        </view>
+      </view>
+      <!-- 消息底部 -->
+      <view class="msg-footer">
+          <view class="msg-time">
+            <text>{{ createdTime }}</text>
+          </view>
+      </view>
+      <!-- 置顶标识 -->
+      <view wx:if="{{ top == 1 }}" class="msg-top"></view>
+  </view>
+</view>
+<slot></slot>

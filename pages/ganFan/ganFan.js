@@ -5,7 +5,52 @@ Page({
    * 页面的初始数据
    */
   data: {
+    removeEated: false,
+    result: '开封菜',
+    thisWeek: [
+      {
+        week: '周一',
+        name: '黄山菜饭'
+      },
+      {
+        week: '周二',
+        name: '开封菜'
+      },
+      {
+        week: '周三',
+        name: '麻辣烫'
+      },
+      {
+        week: '周四',
+        name: '喵喵智选'
+      },
+      {
+        week: '周五',
+        name: '-'
+      }
+    ],
+    totalRank: [
+      {
+        order: 1, 
+        name: '喵喵智选',
+        count: 10
+      },
+      {
+        order: 2, 
+        name: '开封菜',
+        count: 8
+      },
+      {
+        order: 3, 
+        name: '鱼',
+        count: 5
+      }
+    ],
+    showDialog: false
+  },
 
+  triggerDialog: function() {
+    this.setData({ showDialog: true })
   },
 
   /**

@@ -1,11 +1,26 @@
 <!--pages/function/function.wxml-->
 <view class="page">
-    <view class="page-body">
-        <text style="font-size: 2.0em;">功能</text>
-        <div class="grid-box">
-            <div wx:for="{{functionList}}" class="test-box">
-                <text class="self-text" bindtap="goGanFan">{{item.name}}</text>
-            </div>
-        </div>
-    </view>
+  <view class="page-body">
+    <text class="title-first">Function</text>
+    <!-- big cards -->
+    <block-big 
+      title="抖音视频下载" 
+      des="分享链接转换成无水印下载链接" 
+      category="New" 
+      bindtap="goExportPage" 
+      image="https://dududu.top/upload/2020/09/canyon-5552326_640-95d6ee8b5e814e95816a38758377e81d.jpg" 
+    />
+    <block-big 
+      title="干饭生成器" 
+      des="今天吃什么，这是个问题" 
+      category="Developing" 
+      bindtap="goGanFanPage" 
+      image="https://dududu.top/upload/2020/12/pasta-ed51aeb6a3a74d53b685b79524d011f4.jpg" 
+    />
+    <block-big 
+      title="开发中……" 
+      des="会是什么新功能呢？真是令人期待呀" 
+      category="Coming Soon"
+    />
+  </view>
 </view>

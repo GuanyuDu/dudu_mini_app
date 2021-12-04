@@ -1,1 +1,76 @@
 /* pages/ganFan/ganFan.wxss */
+.title-position {
+  height: 50px;
+  display: grid;
+  margin-top: 25px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.title-position::after {
+  content: '';
+  height: 20px;
+  width: 300px;
+  /* margin-top: 5px; */
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: rgb(240, 196, 138);
+}
+
+.module {
+  margin-top: 25px;
+}
+
+.form-position {
+  height: 70px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.button-position {
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button-position button {
+  width: 150px !important;
+}
+
+.rank {
+  display: grid;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.rank-item {
+  display: grid;
+  height: 30px;
+  align-items: center;
+  border-bottom: 1px solid #d0d0d0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.total {
+  display: grid;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.total-item {
+  display: grid;
+  height: 30px;
+  align-items: center;
+  border-bottom: 1px solid #d0d0d0;
+  grid-template-columns: 4fr 5fr 1fr;
+}

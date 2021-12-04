@@ -1,46 +1,49 @@
 {
-  "pages":[
-    "pages/musicPage/musicPage",
-    "pages/message/message",
-    "pages/function/function",
-    "pages/ganFan/ganFan",
-    "pages/logs/logs"
-  ],
-  "tabBar": {
-    "selectedColor": "#2e7bfd",
-    "list": [{
-      "text": "Music",
-      "pagePath": "pages/musicPage/musicPage",
-      "iconPath": "assets/icons/music.png",
-      "selectedIconPath": "assets/icons/music_blue.png"
+    "pages": [
+        "pages/message/message",
+        "pages/function/function",
+        "pages/ganFan/ganFan",
+        "pages/logs/logs",
+        "pages/tiktokExport/tiktokExport"
+    ],
+    "tabBar": {
+        "color": "#949494",
+        "selectedColor": "#2e7bfd",
+        "list": [
+            {
+                "text": "Messag",
+                "pagePath": "pages/message/message",
+                "iconPath": "assets/icons/message.png",
+                "selectedIconPath": "assets/icons/message_blue.png"
+            },
+            {
+                "text": "Function",
+                "pagePath": "pages/function/function",
+                "iconPath": "assets/icons/function.png",
+                "selectedIconPath": "assets/icons/function_blue.png"
+            }
+        ]
     },
-    {
-      "text": "Messag",
-      "pagePath": "pages/message/message",
-      "iconPath": "assets/icons/message.png",
-      "selectedIconPath": "assets/icons/message_blue.png"
+    "darkmode": false,
+    "themeLocation": "theme.json",
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "@navBackgroundColor",
+        "navigationBarTitleText": "DuDu",
+        "navigationBarTextStyle": "@navTextStyle",
+        "onReachBottomDistance": 50
     },
-    {
-      "text": "Function",
-      "pagePath": "pages/function/function",
-      "iconPath": "assets/icons/function.png",
-      "selectedIconPath": "assets/icons/function_blue.png"
-    }]
-  },
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "useExtendedLib": {
-    "weui": true
-  },
-  "usingComponents": {
-    "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
-    "mp-dialog": "weui-miniprogram/dialog/dialog",
-    "mp-loading": "weui-miniprogram/loading/loading"
-  }
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+        "weui": true
+    },
+    "usingComponents": {
+        "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
+        "mp-dialog": "weui-miniprogram/dialog/dialog",
+        "mp-loading": "weui-miniprogram/loading/loading",
+        "block-big": "pages/components/big-block/big-block",
+        "msg-section": "pages/components/msg-section/msg-section",
+        "dialog-card": "pages/components/dialog-card/dialog-card"
+    }
 }
