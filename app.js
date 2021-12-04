@@ -36,3 +36,8 @@ App({
     userInfo: null
   }
 })
+
+/**
+ * 小程序后端服务请求路径
+ */
+export const domain = 'https://api.dududu.top';

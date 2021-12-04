@@ -3,20 +3,22 @@
     <view class="page-body">
         <view class="main-title">
             <text class="title-1">TikTok</text>
-            <text class="title-2">Video Download</text>
+            <text class="title-2">Share Link Transform</text>
         </view>
-        <view class="input-area">
-            <input auto-focus="true" placeholder="在此粘贴分享链接" />
-            <view class="go-btn">
+        <view class="typing-area">
+            <input focus="{{ focusInput }}" model:value="{{ inputValue }}" placeholder="在此粘贴分享链接" />
+            <view class="go-btn" bindtap="transformShareLink">
                 <span>Go</span>
             </view>
         </view>
-        <view class="result-area">
-            <view class="result-inner">
-                <span>https://developer.mozilla.org/enUS/docs/Web/CSS/flexGrow/docs/Web/CSS/flex-grow</span>
-                <view class="spit-line"></view>
-                <span>https://developer.mozilla.org/enUS/docs/Web/CSS/flexGrow/docs/Web/CSS/flex-grow</span>
+        <view class="result-area" wx:if="{{ urls != null && urls.length > 0 }}">
+            <view class="result-inner" wx:for="{{ displayUrls }}" wx:key="idx">
+                <span bindtap="copyUrlToClipboard" data-idx="{{ index }}">{{ item }}</span>
+                <view class="spit-line" wx:if="{{ index != urls.length - 1 }}"></view>
             </view>
+        </view>
+        <view class="tips" wx:if="{{ urls != null && urls.length > 0 }}">
+            <text>Tips 点击链接即可复制</text>
         </view>
         <view class="footer">
             <text>Design by Guanyu</text>

@@ -22,9 +22,9 @@
         "uploadWithSourceMap": true,
         "compileHotReLoad": true,
         "lazyloadPlaceholderEnable": false,
-        "useMultiFrameRuntime": false,
-        "useApiHook": false,
-        "useApiHostProcess": false,
+        "useMultiFrameRuntime": true,
+        "useApiHook": true,
+        "useApiHostProcess": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
@@ -43,7 +43,7 @@
     },
     "compileType": "miniprogram",
     "libVersion": "2.20.0",
-    "appid": "wxf9971d0ffde76cc6",
+    "appid": "wxd5cf3474ac608dcc",
     "projectname": "dudu-miniapp",
     "debugOptions": {
         "hidedInDevtools": []

@@ -7,6 +7,12 @@ Page({
     
   },
   goGanFanPage: function() {
+    wx.showToast({
+      title: '开发中，尽请期待…',
+      icon: 'none',
+      duration: 2000
+    })
+    return;
     wx.navigateTo({
       url: '/pages/ganFan/ganFan',
     })

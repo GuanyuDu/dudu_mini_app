@@ -4,7 +4,7 @@
         <view>
             <text class="title-first">Message</text>
         </view>
-        <view class="empty-text" wx:if="{{ msgs == null || msgs.length == 0 }}">
+        <view class="empty-warn" wx:if="{{ msgs == null || msgs.length == 0 }}">
             <image src="/assets/icons/empty2.svg" alt="empty"></image>
             <text>Nothing here</text>
         </view>
@@ -17,9 +17,9 @@
                 top="{{ item.topFlag }}" />
         </view>
         <!-- float button -->
-        <view class="float-btn" bindtap="dialogCtl">
+        <!-- <view class="float-btn" bindtap="dialogCtl">
             <text>说两句</text>
-        </view>
+        </view> -->
         <!-- dialog -->
         <dialog-card showDialog="{{ showDialog }}" bind:confirm="confirmEvent" bind:cancel="cancelEvent">
             <text>我是插槽放进来的内容</text>
