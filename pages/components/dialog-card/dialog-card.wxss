@@ -14,27 +14,38 @@
 }
 
 .dg-container {
-  height: 50%;
   width: 80%;
   padding: 20px;
   display: grid;
-  grid-template-rows: 1fr 4fr 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   overflow: hidden;
+  animation-name: jellyScaleIn;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
 .dg-header .dg-title {
   font-size: 1.5em;
 }
 
+.dg-main, .dg-footer {
+  margin-top: 15px;
+}
+
 .dg-bottom {
   display: grid;
+  height: 50px;
+  margin-top: 20px;
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr 10px 1fr;
 }
 
 .dg-bottom button {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.1);

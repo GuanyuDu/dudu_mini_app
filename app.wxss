@@ -53,6 +53,27 @@ view {
   font-weight: bold;
 }
 
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes jellyScaleIn {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* 暗黑模式下应用的样式 */
 @media (prefers-color-scheme: dark) {
   .eat-back {
