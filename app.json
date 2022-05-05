@@ -11,7 +11,7 @@
         "selectedColor": "#2e7bfd",
         "list": [
             {
-                "text": "Messag",
+                "text": "Tree Hole",
                 "pagePath": "pages/message/message",
                 "iconPath": "assets/icons/message.png",
                 "selectedIconPath": "assets/icons/message_blue.png"

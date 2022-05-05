@@ -4,18 +4,18 @@
     <text class="title-first">Function</text>
     <!-- big cards -->
     <block-big 
-      title="抖音视频下载" 
-      des="分享链接转换成无水印下载链接" 
+      title="哔哩哔哩、抖音视频下载" 
+      des="视频、分享链接转换成下载链接" 
       category="New" 
       bindtap="goExportPage" 
-      image="https://dududu.top/upload/2020/09/canyon-5552326_640-95d6ee8b5e814e95816a38758377e81d.jpg" 
+      image="https://dududu.top/assets/mountain-and-sea.jpg" 
     />
     <block-big 
       title="干饭生成器" 
       des="今天吃什么，这是个问题" 
       category="Developing" 
       bindtap="goGanFanPage" 
-      image="https://dududu.top/upload/2020/12/pasta-ed51aeb6a3a74d53b685b79524d011f4.jpg" 
+      image="https://dududu.top/assets/color-light.jpg" 
     />
     <block-big 
       title="开发中……" 

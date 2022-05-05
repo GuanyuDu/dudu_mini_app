@@ -23,6 +23,10 @@ Component({
     top: {
       type: Number,
       value: 0
+    },
+    bgColor: {
+        type: String,
+        value: ''
     }
   },
 

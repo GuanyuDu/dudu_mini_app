@@ -50,3 +50,11 @@
   border-radius: 10px;
   box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.1);
 }
+
+.dg-bottom .confirm-btn {
+    color: rgba(39, 174, 95, 1);
+}
+
+.dg-bottom .cancel-btn {
+    color: rgba(0, 0, 0, 0.6);
+}

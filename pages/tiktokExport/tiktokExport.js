@@ -34,6 +34,7 @@ Page({
   checkShareLink: function() {
     // 如果能读取到用户剪切板再往下走
     this.readClipboard().then(clipboard => {
+      clipboard.indexOf('douyin')
       if (clipboard.indexOf('douyin') >= 0) {
         this.setData({ clipboard: clipboard });
         this.showDialog('发现抖音分享链接是否使用？\n\n' + clipboard);

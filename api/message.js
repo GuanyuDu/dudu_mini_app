@@ -1,5 +1,4 @@
-let app = require('../app');
-let { domain } = app;
+let { domain } = require('../app');
 
 /**
  * 获取可见消息列表

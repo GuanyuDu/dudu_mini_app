@@ -11,11 +11,25 @@
 } */
 
 view {
-  /* font-family: 'Nunito'; */
   /* 全局调色盘 */
   --primary-color: #2e7bfd;
   --gray-1: #cecece;
   --gray-2: #bfbfbf;
+  --gray-0: rgba(136, 136, 136);
+  --gray-3: rgba(136, 136, 136, 0.3);
+  --orange-0: rgba(255, 140, 18);
+  --orange-3: rgba(255, 141, 18, 0.3);
+  --green-0: rgba(56, 194, 63);
+  --green-3: rgba(56, 194, 63, 0.3);
+  --blue-0: rgba(17, 140, 255);
+  --blue-3: rgba(17, 140, 255, 0.3);
+  --pink-0: rgba(255, 140, 179);
+  --pink-3: rgba(255, 140, 179, 0.3);
+  --magenta-0: rgba(255, 64, 129);
+  --magenta-3: rgba(255, 64, 129, 0.3);
+  --deep-blue-0: rgba(77, 120, 185);
+  --deep-blue-3: rgba(77, 120, 185, 0.3);
+
 }
 
 .container {
@@ -51,15 +65,6 @@ view {
 .title-third {
   font-size: 1.2em;
   font-weight: bold;
-}
-
-@keyframes scaleIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 @keyframes jellyScaleIn {

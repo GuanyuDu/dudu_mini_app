@@ -13,9 +13,9 @@
       <text>Tips: 要友善发言哦！</text>
     </view>
     <view class="dg-bottom">
-      <button bindtap="confirm">{{ confirmText }}</button>
+      <button class="confirm-btn" bindtap="confirm">{{ confirmText }}</button>
       <view></view>
-      <button bindtap="cancel">{{ cancelText }}</button>
+      <button class="cancel-btn" bindtap="cancel">{{ cancelText }}</button>
     </view>
   </view>
 </view>

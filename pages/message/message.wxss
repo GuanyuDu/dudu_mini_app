@@ -1,19 +1,19 @@
 /* pages/message/message.wxss */
+
 .float-btn {
-  width: 60px;
+  width: 80px;
   height: 40px;
   color: #fff;
   position: fixed;
   right: 20px;
-  bottom: 50px;
+  top: 15px;
   display: grid;
   align-items: center;
   justify-items: center;
-  border-radius: 15px;
-  border: 2px solid #f0f0f0;
-  background-color: #88b3fe;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
-  transition: all ease 200ms;
+  border-radius: 20px;
+  background-color: #27ae5f;
+  /* box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .2); */
+  font-size: 1em;
 }
 
 .empty-warn {

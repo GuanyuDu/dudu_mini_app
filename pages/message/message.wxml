@@ -2,7 +2,7 @@
 <view class="page">
     <view class="page-body">
         <view>
-            <text class="title-first">Message</text>
+            <text class="title-first">Tree Hole</text>
         </view>
         <view class="empty-warn" wx:if="{{ msgs == null || msgs.length == 0 }}">
             <image src="/assets/icons/empty2.svg" alt="empty"></image>
@@ -14,14 +14,15 @@
                 nickName="{{ item.nickname }}" 
                 message="{{ item.comment }}" 
                 createdTime="{{ item.createTime }}" 
-                top="{{ item.topFlag }}" />
+                top="{{ item.topFlag }}"
+                bgColor="{{ item.bgColor }}" />
         </view>
         <!-- float button -->
         <view class="float-btn" bindtap="dialogCtl">
-            <text>说两句</text>
+            <text>New</text>
         </view>
         <!-- dialog -->
-        <dialog-card showDialog="{{ showDialog }}" confirmText="知道了" cancelText="我不听" bind:confirm="confirmEvent" bind:cancel="cancelEvent">
+        <dialog-card showDialog="{{ showDialog }}" confirmText="去授权" cancelText="我不听" bind:confirm="confirmEvent" bind:cancel="cancelEvent">
             <text>(￣▽￣)" 服务酱还不认识你呢！\n\n需要授权使用你的『个人头像』和『昵称』才可以发言哦</text>
             <!-- <textarea class="text-area" name="" id="" cols="30" rows="10"></textarea> -->
         </dialog-card>

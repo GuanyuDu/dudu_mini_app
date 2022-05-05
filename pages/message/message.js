@@ -1,5 +1,6 @@
 // pages/message/message.js
 const messageApi = require('../../api/message');
+const { domain, getColor, getColorByHash } = require('../../app');
 
 Page({
 
@@ -9,7 +10,7 @@ Page({
   data: {
     showDialog: false,
     currentPage: 1,
-    pageSize: 5,
+    pageSize: 6,
     msgs: []
   },
 
@@ -24,6 +25,9 @@ Page({
     messageApi.getMessageList(currentPage, pageSize).then(res => {
       // 创建一个新的消息集合
       let newMsgs = res.data.data;
+      newMsgs.forEach(item => {
+          item.bgColor = getColor();
+      });
       if (newMsgs.length == 0) {
         wx.showToast({
           title: '没有啦',

@@ -1,6 +1,6 @@
 <!--pages/components/msg-section/msg-section.wxml-->
 <view class="inner">
-  <view class="msg-item">
+  <view class="msg-item" style="background-color: {{ bgColor }};">
       <!-- 消息上部 -->
       <view class="msg-body">
         <view class="msg-user-avatar" style="background-image: url('{{ avatar }}');"></view>

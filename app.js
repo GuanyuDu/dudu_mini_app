@@ -40,4 +40,59 @@ App({
 /**
  * 小程序后端服务请求路径
  */
-export const domain = 'https://api.dududu.top';
+export const domain = 'http://127.0.0.1';
+
+/**
+ * 颜色选择器参数
+ */
+let index = 0;
+const colors = [
+  "rgba(136, 136, 136, 0.3)",
+  "rgba(255, 141, 18, 0.3)",
+  "rgba(56, 194, 63, 0.3)",
+  "rgba(17, 140, 255, 0.3)",
+  "rgba(255, 140, 179, 0.3)",
+  "rgba(77, 120, 185, 0.3)"
+]
+/**
+ * 顺序颜色选择器方法
+ */
+export function getColor() {
+  index++;
+  if (index >= colors.length) {
+    index = 0;
+  }
+  return colors[index];
+}
+
+export function getColorByHash(hashCode) {
+  let hashCodeStr = hashCode.toString();
+  let num = hashCodeStr.substring(hashCodeStr.length - 2, hashCodeStr.length - 1);
+  if (num >= colors.length) {
+    num = 0;
+  }
+  console.log(num)
+  return colors[num];
+}
+
+export function hashCode() {
+  var hash = 0, i, chr;
+  if (this.length === 0) return hash;
+  for (i = 0; i < this.length; i++) {
+    chr = this.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+};
+
+String.prototype.hashCode = function() {
+  var hash = 0, i, chr;
+  if (this.length === 0) return hash;
+  for (i = 0; i < this.length; i++) {
+    chr   = this.charCodeAt(i);
+    hash  = ((hash << 5) - hash) + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+};
